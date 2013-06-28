@@ -1,3 +1,17 @@
+<ul>  
+  <% @team.each do |team| %>
+  <li>  Team Name: <%= team[:name] %></li><br>
+  <li>  Team Moto: <%= team[:moto] %></li><br>
+  <ul>      <% team[:player].each do |player| %><br>
+    <li>Name:        <%= player[:name] %></li><br>
+    <li>Power:        <%= player[:power] %></li><br>
+    <li>Bio:        <%= player[:bio] %></li><br>
+            <% end %>
+            
+  </ul>
+  <% end %>
+
+
 
 
 
